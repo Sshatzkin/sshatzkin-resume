@@ -58,6 +58,10 @@ function modules() {
   // Font Awesome Webfonts
   var fontAwesomeWebfonts = gulp.src('./node_modules/@fortawesome/fontawesome-free/webfonts/**/*')
     .pipe(gulp.dest('./vendor/fontawesome-free/webfonts'));
+  // mfizz Webfonts
+  //THIS IS MY ADDED code
+  var fontMfizz = gulp.src('./node_modules/@fortawesome/font-mfizz-2.4.1')
+    .pipe(gulp.dest('./vendor/font-mfizz-2.4.1'));
   // jQuery Easing
   var jqueryEasing = gulp.src('./node_modules/jquery.easing/*.js')
     .pipe(gulp.dest('./vendor/jquery-easing'));
@@ -67,7 +71,8 @@ function modules() {
       '!./node_modules/jquery/dist/core.js'
     ])
     .pipe(gulp.dest('./vendor/jquery'));
-  return merge(bootstrap, fontAwesomeCSS, fontAwesomeWebfonts, jquery, jqueryEasing);
+    //Added mfizz to this line
+  return merge(bootstrap, fontAwesomeCSS, fontAwesomeWebfonts, fontMfizz, jquery, jqueryEasing);
 }
 
 // CSS task
