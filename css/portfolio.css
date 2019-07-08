@@ -1,10 +1,9 @@
 .banner-img {
     max-width:1000px;
-    width: 80%;
+    width: 75%;
     margin:0 auto;
     padding:0;
-    font-size:0;
+    margin-bottom: 10px;
     list-style: none;
-    background-color: #000;
     display:block;
 }
