@@ -48,7 +48,7 @@
     bottom: 0;
     right: 0;
     margin: auto;
-    background: #2C7EDB url(img/link.png) no-repeat center 20%;
+    background: #2C7EDB no-repeat center 20%;
     background-size:50px 50px;
     opacity:0;
     filter:alpha(opacity=0);/*For IE6 - IE8*/
@@ -86,7 +86,7 @@
 
 @media (max-width: 9000px) {
     #rig li {
-        width:25%;
+        width:33.33%;
     }
 }
 
