@@ -60,7 +60,7 @@ function modules() {
     .pipe(gulp.dest('./vendor/fontawesome-free/webfonts'));
   // mfizz Webfonts
   //THIS IS MY ADDED code
-  var fontMfizz = gulp.src('./node_modules/@fortawesome/font-mfizz-2.4.1')
+  var fontMfizz = gulp.src('./node_modules/@fortawesome/font-mfizz-2.4.1/**/*')
     .pipe(gulp.dest('./vendor/font-mfizz-2.4.1'));
   // jQuery Easing
   var jqueryEasing = gulp.src('./node_modules/jquery.easing/*.js')
