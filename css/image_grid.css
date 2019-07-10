@@ -72,7 +72,7 @@
     font-weight:bold;
     font-family: 'Oswald', sans-serif;
     font-weight:normal!important;
-    top:35%;
+    top:30%;
     color:white;
     opacity:0;
     filter:alpha(opacity=0);/*For older IE*/
