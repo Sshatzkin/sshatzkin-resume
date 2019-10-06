@@ -55,10 +55,10 @@
           <a class="nav-link js-scroll-trigger" href="#Hackathon19">Google Home LED Encoding</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#go">Go</a>
+          <a class="nav-link js-scroll-trigger" href="#bagel">Bagel</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#bagel">Bagel</a>
+          <a class="nav-link js-scroll-trigger" href="#go">Go</a>
         </li>
       </ul>
     </div>
@@ -219,6 +219,22 @@
 
   <hr class="m-0">
 
+  <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="bagel">
+    <div class="w-100">
+      <h2 class="mb-5">Bagel</h2>
+      <img class="banner-img" src="..\img\Bagel\bagel-optimized.gif"></img>
+      <p>Bagel is a multiplayer word-scramble game that I constructed in Unity. Inspired by a Hasbro game of an admittedly similar name that I play quite frequently, I decided to develop a digital version of the game.
+      </p>
+      <p>Digitizing the board allowed my to achieve two personal goals. It allows me to play a fair game of "bagel" with anyone in any location and it allows me to find all possible words in the bagel board.
+      </p>
+      <p>The text box on the left side of the board is used for seeding the random number generator that plays a pivotal role in board generation. Two players can use the same seed to ensure they generate identical boards. This allows long-distance play and non-simultaneous play.
+      </p>
+      <p> In order to find every possible word in the board, an graph-traversing algorithm is running the background while the player searches the board. This algorithm iterates over the board and checks possible words against a specialized data structure called a Trie which contains every word in the english language. This system is extremely efficient and allows the algorithm to return all possible words within less than a second, much faster than any human player could even scan the board.
+      </p>
+    </div>
+  </section>
+
+  <hr class="m-0">
   <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="go">
     <div class="w-100">
       <h2 class="mb-5">Go</h2>
@@ -228,7 +244,7 @@
       <p>The game is fully playable by two players. Notice the UI details - a holographic circle under the cursor indicating a potential placement, a star indicating the last placed piece, a square indicating where a piece was captured last turn, and a series
         of timers showing how much time each player has spent planning their moves.
       </p>
-      <p>The most challenging component of building this game was the mechanic that removes pieces from the board. In go, a string of adjacent pieces is captured when the string is entirely surrounded by the opponent’s pieces or edges of the board. Checking
+      <p>The most challenging component of building this game was constructing the mechanic that removes pieces from the board. In go, a string of adjacent pieces is captured when the string is entirely surrounded by the opponent’s pieces or edges of the board. Checking
         for this case is actually a graph theory problem that required a graph traversal algorithm to resolve.
       </p>
 
