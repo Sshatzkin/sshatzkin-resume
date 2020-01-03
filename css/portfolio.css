@@ -140,6 +140,12 @@
   width: 25%;
 }
 
+/* 7 Columns side by side */
+.column-gal-small {
+  float: left;
+  width: 12.5%;
+}
+
 /* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.6;
