@@ -5,6 +5,18 @@
   padding: 5px;
 }
 
+.column_quarter {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+.column_quarter_flex {
+  float: left;
+  width: 75%;
+  padding: 5px;
+}
+
 .col-img {
   width:100%;
 }
@@ -140,6 +152,12 @@
   width: 25%;
 }
 
+/* 7 Columns side by side */
+.column-gal-small {
+  float: left;
+  width: 12.5%;
+}
+
 /* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.6;
@@ -156,8 +174,20 @@
     width: 100%;
   }
 
+  .column_quarter{
+    width: 50%;
+  }
+
+  .column_quarter_flex{
+    width:50%;
+  }
+
   .profile-img {
     width: 50%;
+  }
+
+  .banner-img {
+      width: 90%;
   }
 
 }

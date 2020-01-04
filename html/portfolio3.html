@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Sam Shatzkin's Resume">
+  <meta name="author" content="Sam Shatzkin">
+
+  <title>Sam Shatzkin's Portfolio</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="../vendor/font-mfizz-2.4.1/font-mfizz.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/resume.css" rel="stylesheet">
+  <link href="../css/portfolio.css" rel="stylesheet">
+
+  <!-- Pagination Style Sheet -->
+  <link href="../css/pagination.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Left Side Navigation Menu -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Sam Shatzkin</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="..\img\Pic2.jpg" alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="../index.html#portfolio">Return</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#bagel">Bagel</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#go">Go</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#abstract">Abstract Photography</a>
+        </li>
+        <li>
+          <br>
+          <!-- Pagination Menu -->
+          <div class="pag_center">
+            <div class="pagination">
+              <a href="portfolio2.html">&laquo;</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Pagination Menu -->
+  <br>
+  <div class="pag_center">
+    <div class="pagination">
+      <a href="portfolio2.html">&laquo;</a>
+      <a href="portfolio.html">1</a>
+      <a href="portfolio2.html">2</a>
+      <a class="active" href="portfolio3.html">3</a>
+      <!--<a href="portfolio3.html">&raquo;</a>-->
+    </div>
+  </div>
+
+  <div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="bagel">
+      <div class="w-100">
+        <h2 class="mb-5">Bagel</h2>
+        <img class="banner-img" src="..\img\Bagel\bagel-optimized.gif"></img>
+        <p>Bagel is a multiplayer word-scramble game that I constructed in Unity. Inspired by a Hasbro game of an admittedly similar name that I play quite frequently, I decided to develop a digital version of the game.
+        </p>
+        <p>Digitizing the board allowed my to achieve two personal goals. It allows me to play a fair game of "bagel" with anyone in any location and it allows me to find all possible words in the bagel board.
+        </p>
+        <p>The text box on the left side of the board is used for seeding the random number generator that plays a pivotal role in board generation. Two players can use the same seed to ensure they generate identical boards. This allows long-distance
+          play and non-simultaneous play.
+        </p>
+        <p> In order to find every possible word in the board, an graph-traversing algorithm is running the background while the player searches the board. This algorithm iterates over the board and checks possible words against a specialized data
+          structure called a Trie which contains every word in the english language. This system is extremely efficient and allows the algorithm to return all possible words within less than a second, much faster than any human player could even scan
+          the board.
+        </p>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="go">
+      <div class="w-100">
+        <h2 class="mb-5">Go</h2>
+        <img class="profile-img" src="..\img\Go\optimized gif.gif"></img>
+        <p>Go is an ancient Chinese two-player game. I recreated the game go with the programming language Typed Racket for a course I was enrolled in.
+        </p>
+        <p>The game is fully playable by two players. Notice the UI details - a holographic circle under the cursor indicating a potential placement, a star indicating the last placed piece, a square indicating where a piece was captured last turn,
+          and a series
+          of timers showing how much time each player has spent planning their moves.
+        </p>
+        <p>The most challenging component of building this game was constructing the mechanic that removes pieces from the board. In go, a string of adjacent pieces is captured when the string is entirely surrounded by the opponent’s pieces or edges
+          of the board. Checking
+          for this case is actually a graph theory problem that required a graph traversal algorithm to resolve.
+        </p>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="abstract">
+      <div class="w-100">
+        <h2 class="mb-5">Abstract Photography Award</h2>
+        <img class="banner-img" src="..\img\Abstract Photography\Drain Photo.JPG"></img>
+        <p>This photograph was chosen amongst a handful of other winners in a city-wide abstract art competition, titled <i>Alternative Approaches: Seeking the Uncommon</i>. The photo was displayed at an exhibition of the winning works in Times Square Tower.
+        </p>
+        <p>
+          I shot this photo on two consecutive days, once in the early afternoon on a cloudy day, and then to capture this image, I returned the next day around dusk. The setting sun provided just the right lighting to capture the color and depth of the plants who have managed to survive despite the pressures of urban life.
+        </p>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Pagination Menu -->
+  <div class="pag_center">
+    <div class="pagination">
+      <a href="portfolio2.html">&laquo;</a>
+      <a href="portfolio.html">1</a>
+      <a href="portfolio2.html">2</a>
+      <a class="active" href="portfolio3.html">3</a>
+      <!--<a href="portfolio3.html">&raquo;</a>-->
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="../js/resume.min.js"></script>
+  <script src="../js/portfolio.js"></script>
+
+</body>
+
+</html>
