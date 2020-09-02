@@ -10,6 +10,15 @@
 
   <title>Sam Shatzkin's Portfolio</title>
 
+   <!-- Favicon -->
+   <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+   <link rel="manifest" href="/img/favicons/site.webmanifest">
+   <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+   <meta name="msapplication-TileColor" content="#2d89ef">
+   <meta name="theme-color" content="#ffffff">
+
   <!-- Bootstrap core CSS -->
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -47,20 +56,20 @@
           <a class="nav-link js-scroll-trigger" href="../index.html#portfolio">Return</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#bagel">Bagel</a>
+          <a class="nav-link js-scroll-trigger" href="#chiventure">Chiventure</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#go">Go</a>
+          <a class="nav-link js-scroll-trigger" href="#shakedlab">Shaked Lab Website</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#abstract">Abstract Photography</a>
+          <a class="nav-link js-scroll-trigger" href="#Hackathon19">Google Home LED Encoding</a>
         </li>
         <li>
           <br>
-          <!-- Pagination Menu -->
           <div class="pag_center">
             <div class="pagination">
               <a href="portfolio2.html">&laquo;</a>
+              <a href="portfolio4.html">&raquo;</a>
             </div>
           </div>
         </li>
@@ -76,60 +85,122 @@
       <a href="portfolio.html">1</a>
       <a href="portfolio2.html">2</a>
       <a class="active" href="portfolio3.html">3</a>
-      <!--<a href="portfolio3.html">&raquo;</a>-->
+      <a href="portfolio4.html">4</a>
+      <a href="portfolio4.html">&raquo;</a>
     </div>
   </div>
 
   <div class="container-fluid p-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="bagel">
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="chiventure">
       <div class="w-100">
-        <h2 class="mb-5">Bagel</h2>
-        <img class="banner-img" src="..\img\Bagel\bagel-optimized.gif"></img>
-        <p>Bagel is a multiplayer word-scramble game that I constructed in Unity. Inspired by a Hasbro game of an admittedly similar name that I play quite frequently, I decided to develop a digital version of the game.
-        </p>
-        <p>Digitizing the board allowed my to achieve two personal goals. It allows me to play a fair game of "bagel" with anyone in any location and it allows me to find all possible words in the bagel board.
-        </p>
-        <p>The text box on the left side of the board is used for seeding the random number generator that plays a pivotal role in board generation. Two players can use the same seed to ensure they generate identical boards. This allows long-distance
-          play and non-simultaneous play.
-        </p>
-        <p> In order to find every possible word in the board, an graph-traversing algorithm is running the background while the player searches the board. This algorithm iterates over the board and checks possible words against a specialized data
-          structure called a Trie which contains every word in the english language. This system is extremely efficient and allows the algorithm to return all possible words within less than a second, much faster than any human player could even scan
-          the board.
-        </p>
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="go">
-      <div class="w-100">
-        <h2 class="mb-5">Go</h2>
-        <img class="profile-img" src="..\img\Go\optimized gif.gif"></img>
-        <p>Go is an ancient Chinese two-player game. I recreated the game go with the programming language Typed Racket for a course I was enrolled in.
-        </p>
-        <p>The game is fully playable by two players. Notice the UI details - a holographic circle under the cursor indicating a potential placement, a star indicating the last placed piece, a square indicating where a piece was captured last turn,
-          and a series
-          of timers showing how much time each player has spent planning their moves.
-        </p>
-        <p>The most challenging component of building this game was constructing the mechanic that removes pieces from the board. In go, a string of adjacent pieces is captured when the string is entirely surrounded by the opponent’s pieces or edges
-          of the board. Checking
-          for this case is actually a graph theory problem that required a graph traversal algorithm to resolve.
-        </p>
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="abstract">
-      <div class="w-100">
-        <h2 class="mb-5">Abstract Photography Award</h2>
-        <img class="banner-img" src="..\img\Abstract Photography\Drain Photo.JPG"></img>
-        <p>This photograph was chosen amongst a handful of other winners in a city-wide abstract art competition, titled <i>Alternative Approaches: Seeking the Uncommon</i>. The photo was displayed at an exhibition of the winning works in Times Square Tower.
+        <h2 class="mb-5">Chiventure</h2>
+        <!--<ul class="fa-ul mb-0">
+          <li>-->
+        <p>Chiventure is a game engine built to run text-based games specified in an original file format designed for this project. This project was the creation of UChicago’s software development class - a course where 30 students spend 10 weeks
+          working
+          together to develop on major project.It is intended to be a simulation of what it is like to work on a real software development team.
         </p>
         <p>
-          I shot this photo on two consecutive days, once in the early afternoon on a cloudy day, and then to capture this image, I returned the next day around dusk. The setting sun provided just the right lighting to capture the color and depth of the plants who have managed to survive despite the pressures of urban life.
+          This game, like many classic text-based games allow the player to navigate and interact with the world of this game via text commands.
         </p>
+        <div class="row">
+          <div class="column">
+            <img class="col-img" src="..\img\Chiventure\Logo.png">
+          </div>
+          <div class="column">
+            <img class="col-img" src="..\img\Chiventure\map-view.jpg">
+          </div>
+        </div>
+        <p>I was on the UI team for this project. We developed the entire UI using the NCurses library which allowed us to have this game run entirely in a linux terminal. I developed a map interface that generates a map from the game file and
+          updates to
+          show the player where they are in game world. Visual elements like this are not typical of the classic text-based games we were emulating with this project but we felt that this addition added a lot of value to the text-based format.
+        </p>
+        <p>This is an image of a near-final iteration of the map. The main component of the map is the grid of boxes representing “rooms” or areas of the game. You can see a small ascii character-based person in the center indicating the player’s
+          location
+          and in the upper left hand corner, the x, y, and z coordinates of the player’s current location. Some version of the map also include illustrations of connections between rooms.
+        </p>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="shakedlab">
+      <div class="w-100">
+        <h2 class="mb-5">Shaked Lab Website</h2>
+        <p>I completely redesigned and built this website for The Shaked Lab at the Technion Institute in Haifa. Their previous website was outdated and lacked modern accessibility features and mobile device compatibility. I redesigned their site to
+          bring
+          it up to par with modern design features, increasing accessibility, visual appeal and functionality.
+        </p>
+        <!-- Container for the image gallery -->
+        <div class="container">
+
+          <!-- Full-width images with number text -->
+          <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+            <img src="..\img\Shaked\Home.PNG" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+            <img src="..\img\Shaked\Lab Members.PNG" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img src="..\img\Shaked\Research.PNG" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img src="..\img\Shaked\Contact.PNG" style="width:100%">
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <!-- Image text -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <!-- Thumbnail images -->
+          <div class="row-gal">
+            <div class="column-gal-small">
+              <img class="demo cursor" src="..\img\Shaked\Home.PNG" style="width:100%" onclick="currentSlide(1)" alt="Home Page">
+            </div>
+            <div class="column-gal-small">
+              <img class="demo cursor" src="..\img\Shaked\Lab Members.PNG" style="width:100%" onclick="currentSlide(2)" alt="Lab Members Page">
+            </div>
+            <div class="column-gal-small">
+              <img class="demo cursor" src="..\img\Shaked\Research.PNG" style="width:100%" onclick="currentSlide(3)" alt="Research Page">
+            </div>
+            <div class="column-gal-small">
+              <img class="demo cursor" src="..\img\Shaked\Contact.PNG" style="width:100%" onclick="currentSlide(4)" alt="Contact Us Page">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="Hackathon19">
+      <div class="w-100">
+        <h2 class="mb-5">Google Home LED Encoding</h2>
+        <p>A partner and I built this project at Uncommon Hacks 2019, UChicago’s annual Hackathon. The hackathon encourages projects that are “uncommon” over projects that may be more practical.
+        </p>
+        <p>Our project converts audio messages that a user gives a google home to a series of LED light blinks on our LED-to-Alphabet translation board, inspired by a scene from the Netflix Show, Stranger Things.
+        </p>
+        <p>I first developed a google home application in which the google assistant prompts the user to say a message. The google assistant app then uploads this message to a google firebase server. The lights on the board are operated by an arduino
+          UNO running
+          character-to-LED blink translation functions. I used a python script to pull updated messages off of the firebase server and send them to the UNO via serial port messages.
+        </p>
+        <div class="video-box">
+          <iframe class="video" src="https://www.youtube.com/embed/ZsYna0b4P1k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </div>
     </section>
 
@@ -142,7 +213,8 @@
       <a href="portfolio.html">1</a>
       <a href="portfolio2.html">2</a>
       <a class="active" href="portfolio3.html">3</a>
-      <!--<a href="portfolio3.html">&raquo;</a>-->
+      <a href="portfolio4.html">4</a>
+      <a href="portfolio4.html">&raquo;</a>
     </div>
   </div>
 
