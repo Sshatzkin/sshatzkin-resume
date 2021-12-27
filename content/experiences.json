@@ -1,0 +1,140 @@
+{
+  "experiences": [
+    {
+
+      "company": "Amazon",
+      "image": "amazon.jpg",
+      "title": "Software Development Engineer",
+      "location": "New York, NY",
+      "startDate": "Starting Sept 2022",
+      "skills": "",
+      "display": true
+    },
+    {
+      "company": "Human Computer Integration Lab, University of Chicago",
+      "image": "hci_lab.jpg",
+      "title": "Undergrad Research Assistant",
+      "location": "Chicago, IL",
+      "startDate": "November 2021",
+      "endDate": "Present",
+      "skills": "Unity, HTC Vive, Arduino",
+      "details": [
+        "Design immersive VR applications which interface with experimental haptic devices"
+      ],
+      "display": true
+    },
+    {
+      "company": "Arch Capital Group. Ltd.",
+      "image": "arch.jfif",
+      "title": "Software Engineering Intern",
+      "location": "New York, NY & Remote",
+      "startDate": "June 2021",
+      "endDate": "August 2021",
+      "skills": "Azure, Kubernetes, Docker, Python",
+      "details": [
+        "Enhance the safety of customer and corporate data by designing and coordinating a transition between security infrastructure and policies in live, customer-facing cloud software",
+        "Facilitate internal mobility by developing a Kubernetes training curriculum for engineers from other teams and new hires, composed of written educational content and an interactive cloud application development and deployment tutorial in Confluence"
+      ],
+      "display": true
+    },
+    {
+      "company": "Media, Arts, Data and Design Center at the University of Chicago",
+      "title": "Hack Arts Lab (HAL) & Weston Game Lab (WGL) Technician",
+      "location": "Chicago, IL",
+      "startDate": "October 2019",
+      "endDate": "October 2021",
+      "details": [
+        "Trained and assisted visiting students and faculty with proper usage of fabriccation machinery - laser cutters, CNC machines, vinyl cutters, 3D printers, soldering irons",
+        "Managed day to day operations by administering lab resources, managing visitor appointments and chekouts, and maintaining and repairing equipment",
+        "Improved training processes by writing machine and lab procedure turorials and administering certification exams"
+      ],
+      "display": true
+    },
+    {
+      "company": "Character Search, Paleontology Department at the University of Chicago",
+      "title": "Lead Developer",
+      "location": "Chicago, IL",
+      "startDate": "June 2019",
+      "endDate": "June 2021",
+      "skills": "React, AWS, GitHub",
+      "details": [
+        "Develop web-based software tool and database for conducting cladistic analysis and storing character data",
+        "Work with Paleontologist Paul Sereno to develop software to execute his novel cladistic analysis methodology"
+      ],
+      "display": true
+    },
+    {
+      "company": "Old Cow",
+      "title": "Graphic Designer and Web Developer",
+      "location": "Baltimore, MD",
+      "startDate": "June 2019",
+      "endDate": "June 2021",
+      "skills": "Adobe Photoshop, Illustrator, WordPress",
+      "details":[
+        "Create all of the company’s design materials, including logos, merchandise, social media images, and design guides",
+        "Develop the company website and manage the company’s IT administration"
+      ],
+      "display": true
+    },
+    {
+      "company": "Yuval Shaked Lab at the Technion-Israel Institute of Technology",
+      "title": "Website Designer and Developer",
+      "location": "Haifa, IL",
+      "startDate": "June 2018",
+      "endDate": "June 2019",
+      "details":[
+        "Designed and constructed a website for one of the Oncology Department’s Research Labs",
+        "The redesigned website increased the number of research position applicants by about 200%",
+        "Managed the website, performing regular maintenance and content updates"
+      ],
+      "display": true
+    },
+    {
+      "company": "Regulus Cyber",
+      "title": "Research Intern",
+      "location": "Haifa, IL",
+      "startDate": "June 2018",
+      "endDate": "August 2018",
+      "details":[
+        "Conducted research on the GPS and automated vehicle industries for GPS sensor security startup",
+        "Prepared and presented findings to the CEO and company-wide"
+      ],
+      "display": true
+    },
+    {
+      "company": "Fokoya",
+      "title": "Project Management Intern",
+      "location": "Tel Aviv, IL",
+      "startDate": "February 2018",
+      "endDate": "June 2018",
+      "details":[
+        "Developed and marketed the Cryptocurrency Community Database, a forum-like system created in Google Sheets",
+        "Produced and hosted a livestream for product marketing and community engagement on 4 social media platforms",
+        "Automated manual office processes by developing a Google Chrome extension to perform application testing functions, cutting down a task that formerly took hours to only a few seconds"
+      ],
+      "display": true
+    },
+    {
+      "company": "Johns Hopkins University, Department of Neuroscience",
+      "title": "Research Assistant",
+      "location": "Baltimore, MD",
+      "startDate": "December 2015",
+      "endDate": "December 2016",
+      "details": [
+        "Assisted researchers with statistical analysis of RNA sequencing data utilizing the language R"
+      ],
+      "display": true
+    },
+    {
+      "company": "Young People’s Summer Stock Performing & Creative Arts Camp",
+      "title": "Camp Photographer, Photography and Videography Teacher, Camp Counselor",
+      "location": "Baltimore, MD",
+      "startDate": "Summer 2014, '15, '16, '17",
+      "details": [
+        "Responsible for all camp photography. Created a curriculum for and taught a beginner level photography class for 25 campers of various ages"
+      ],
+      "display": true
+    }
+
+  ]
+}
