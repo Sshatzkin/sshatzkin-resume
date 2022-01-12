@@ -1,30 +1,62 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+/*
+&&&&&&&&  Job Experience Templating &&&&&&&&
+*/
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+// Pull in Experiences Data
+fetch("../content/portfolio.json")
+.then(response => {
+   return response.json();
+})
+.then(data => generate_portfolio(data.projects));
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+function generate_portfolio(data){
+  console.log(data);
+  console.log(data.length);
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  /*<li>
+      <a class="rig-cell" href="html/portfolio.html#EB">
+        <img class="rig-img" src="img\EarlyBird\4-3.png">
+        <span class="rig-overlay"></span>
+        <span class="rig-text">Early Bird
+          <br>
+          <i class="fas fa-chevron-circle-right"></i>
+        </span>
+      </a>
+    </li>
+  */
+
+  // Loop through each project
+  for (var i = 0; i < data.length; i++) {
+    if (data[i].display == true) {
+      console.log(data[i]);
+      var template = [
+        '<li>',
+        '<a class="rig-cell" href={{html_file}}>',
+          '<img class="rig-img" src={{image}}>',
+          '<span class="rig-overlay"></span>',
+          '<span class="rig-text">{{title}}',
+            '<br>',
+            '<i class="fas fa-chevron-circle-right"></i>',
+          '</span>',
+        '</a>',
+      '</li>'
+      ].join("\n");
+
+      // template: '<div ...>\n<h1 ...>{{title}}<h1>\n</div>'
+
+      var html = Mustache.render(template, data[i]);
+      
+    
+      console.log(html);
+      $("#rig").append(html);
+    }
+
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+
 }
+
+
+
+/*
+&&&&&&&&  Portfolio Generation &&&&&&&&
+*/
