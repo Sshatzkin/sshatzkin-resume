@@ -3,13 +3,14 @@
 */
 
 // Pull in Experiences Data
-fetch("../content/experiences.json")
+fetch(window.location.origin + "/content/experiences.json")
 .then(response => {
    return response.json();
 })
 .then(data => generate_experiences(data.experiences));
 
 function generate_experiences(data){
+  // Example html of a resume entry
   /*<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">
