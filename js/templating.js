@@ -3,7 +3,7 @@
 */
 
 // Pull in Experiences Data
-fetch(window.location.origin + "/content/experiences.json")
+fetch(window.location.origin + window.location.pathname + "/content/experiences.json")
 .then(response => {
    return response.json();
 })
