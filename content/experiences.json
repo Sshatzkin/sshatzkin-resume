@@ -6,8 +6,13 @@
       "image": "amazon.jpg",
       "title": "Software Development Engineer",
       "location": "New York, NY",
-      "startDate": "Starting Sept 2022",
-      "skills": "",
+      "startDate": "Sept 2022",
+      "endDate": "January 2023",
+      "skills": "Java, AWS",
+      "details": [
+        "Built internal cloud monitoring and alarm systems for a Amazon Today, ensuring the security of data flow from major corporate partners",
+        "Developed automation tools to allow partner teams to overcome key obstacles during periods of rapid scaling of our program by automating tasks that were originally completed manually thousands of times a month"
+      ],
       "display": true
     },
     {
@@ -16,10 +21,11 @@
       "title": "Undergrad Research Assistant",
       "location": "Chicago, IL",
       "startDate": "November 2021",
-      "endDate": "Present",
-      "skills": "Unity, HTC Vive, Arduino",
+      "endDate": "June 2022",
+      "skills": "Unity, HTC Vive, C#, Arduino",
       "details": [
-        "Design immersive VR applications which interface with experimental haptic devices"
+        "Developed virtual reality game applications to interface with novel haptic devices, and designed the games around the device’s unique haptic sensations and capabilities",
+        "Designed and administered user studies, analyzed data, and assisted in revisions for research paper soon to be published at ACM CHI 2023"
       ],
       "display": true
     },
@@ -32,14 +38,15 @@
       "endDate": "August 2021",
       "skills": "Azure, Kubernetes, Docker, Python",
       "details": [
-        "Enhance the safety of customer and corporate data by designing and coordinating a transition between security infrastructure and policies in live, customer-facing cloud software",
-        "Facilitate internal mobility by developing a Kubernetes training curriculum for engineers from other teams and new hires, composed of written educational content and an interactive cloud application development and deployment tutorial in Confluence"
+        "Enhanced the safety of customer and corporate data by designing and coordinating a transition between security infrastructure and policies in live, customer-facing cloud software",
+        "Facilitated internal mobility by developing a Kubernetes training curriculum for other engineers, composed of written educational content and an interactive cloud application development and deployment tutorial in Confluence"
       ],
       "display": true
     },
     {
       "company": "Media, Arts, Data and Design Center at the University of Chicago",
       "title": "Hack Arts Lab (HAL) & Weston Game Lab (WGL) Technician",
+      "image": "UChicago Seal.png",
       "location": "Chicago, IL",
       "startDate": "October 2019",
       "endDate": "October 2021",
@@ -52,6 +59,7 @@
     },
     {
       "company": "Character Search, Paleontology Department at the University of Chicago",
+      "image": "UChicago Seal.png",
       "title": "Lead Developer",
       "location": "Chicago, IL",
       "startDate": "June 2019",
@@ -64,34 +72,9 @@
       "display": true
     },
     {
-      "company": "Old Cow",
-      "title": "Graphic Designer and Web Developer",
-      "location": "Baltimore, MD",
-      "startDate": "June 2019",
-      "endDate": "June 2021",
-      "skills": "Adobe Photoshop, Illustrator, WordPress",
-      "details":[
-        "Create all of the company’s design materials, including logos, merchandise, social media images, and design guides",
-        "Develop the company website and manage the company’s IT administration"
-      ],
-      "display": true
-    },
-    {
-      "company": "Yuval Shaked Lab at the Technion-Israel Institute of Technology",
-      "title": "Website Designer and Developer",
-      "location": "Haifa, IL",
-      "startDate": "June 2018",
-      "endDate": "June 2019",
-      "details":[
-        "Designed and constructed a website for one of the Oncology Department’s Research Labs",
-        "The redesigned website increased the number of research position applicants by about 200%",
-        "Managed the website, performing regular maintenance and content updates"
-      ],
-      "display": true
-    },
-    {
       "company": "Regulus Cyber",
       "title": "Research Intern",
+      "image": "regulus_cyber.avif",
       "location": "Haifa, IL",
       "startDate": "June 2018",
       "endDate": "August 2018",
@@ -104,6 +87,7 @@
     {
       "company": "Fokoya",
       "title": "Project Management Intern",
+      "image": "fokoya.png",
       "location": "Tel Aviv, IL",
       "startDate": "February 2018",
       "endDate": "June 2018",
@@ -111,27 +95,6 @@
         "Developed and marketed the Cryptocurrency Community Database, a forum-like system created in Google Sheets",
         "Produced and hosted a livestream for product marketing and community engagement on 4 social media platforms",
         "Automated manual office processes by developing a Google Chrome extension to perform application testing functions, cutting down a task that formerly took hours to only a few seconds"
-      ],
-      "display": true
-    },
-    {
-      "company": "Johns Hopkins University, Department of Neuroscience",
-      "title": "Research Assistant",
-      "location": "Baltimore, MD",
-      "startDate": "December 2015",
-      "endDate": "December 2016",
-      "details": [
-        "Assisted researchers with statistical analysis of RNA sequencing data utilizing the language R"
-      ],
-      "display": true
-    },
-    {
-      "company": "Young People’s Summer Stock Performing & Creative Arts Camp",
-      "title": "Camp Photographer, Photography and Videography Teacher, Camp Counselor",
-      "location": "Baltimore, MD",
-      "startDate": "Summer 2014, '15, '16, '17",
-      "details": [
-        "Responsible for all camp photography. Created a curriculum for and taught a beginner level photography class for 25 campers of various ages"
       ],
       "display": true
     }
