@@ -4,73 +4,73 @@
       "display": true,
       "title": "Nature Photography: Quarantine 2020",
       "image": "img\\Nature_Photography\\Baltimore_2020\\Owl_4-3.jpg",
-      "html_file": "html/portfolio.html#balt"
+      "html_file": "quarantine_2020"
     },
     {
       "display": true,
       "title": "Hackathon 2020",
       "image": "img/Hackathon/2020/4-3.png",
-      "html_file": "html/portfolio.html#hack2020"
+      "html_file": "hackathon_2020"
     },
     {
       "display": true,
       "title": "Early Bird",
       "image": "img\\EarlyBird\\4-3.png",
-      "html_file": "html/portfolio.html#EB"
+      "html_file": "earlybird"
     },
     {
       "display": true,
       "title": "Nature Photography: California",
       "image": "img/Nature_Photography/Cali_2019/Squirrel_4-3.jpg",
-      "html_file": "html/portfolio2.html#cali"
+      "html_file": "california_2019"
     },
     {
       "display": true,
       "title": "UChicago Engineering Society",
       "image": "img/Engineering_Society/Engineering_Department_Logo_4-3-02.png",
-      "html_file": "html/portfolio2.html#es"
+      "html_file": "engineering_society"
     },
     {
       "display": true,
       "title": "Chiventure",
       "image": "img/Chiventure/Banner.png",
-      "html_file": "html/portfolio3.html#chiventure"
+      "html_file": "chiventure"
     },
     {
       "display": true,
       "title": "Hackathon 2019",
       "image": "img/Hackathon/Board.jpg",
-      "html_file": "html/portfolio3.html#Hackathon19"
+      "html_file": "uncommon_hacks_2019"
     },
     {
       "display": true,
       "title": "Bagel",
       "image": "img/Bagel/Bagel_4-3.png",
-      "html_file": "html/portfolio4.html#bagel"
+      "html_file": "bagel_unity"
     },
     {
       "display": true,
       "title": "Go",
       "image": "img\\Go\\go_4-3.png",
-      "html_file": "html/portfolio4.html#go"
+      "html_file": "go"
     },
     {
       "display": true,
       "title": "The CCD",
       "image": "img/CCD/CCD_4-3.png",
-      "html_file": "html/portfolio2.html#CCD"
+      "html_file": "crypto_com_database"
     },
     {
       "display": true,
       "title": "Shaked Lab Website",
       "image": "img/Shaked/Home_4-3.jpg",
-      "html_file": "html/portfolio3.html#shakedlab"
+      "html_file": "shaked_lab"
     },
     {
       "display": true,
       "title": "Abstract Photography",
       "image": "img\\Abstract_Photography\\Drain_Photo_4-3.jpg",
-      "html_file": "html/portfolio4.html#abstract"
+      "html_file": "abstract_photography"
     }
   ]
 }

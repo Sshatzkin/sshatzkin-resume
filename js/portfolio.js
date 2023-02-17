@@ -10,8 +10,6 @@ fetch("../content/portfolio.json")
 .then(data => generate_portfolio(data.projects));
 
 function generate_portfolio(data){
-  console.log(data);
-  console.log(data.length);
 
   /*<li>
       <a class="rig-cell" href="html/portfolio.html#EB">
@@ -28,7 +26,6 @@ function generate_portfolio(data){
   // Loop through each project
   for (var i = 0; i < data.length; i++) {
     if (data[i].display == true) {
-      console.log(data[i]);
       var template = [
         '<li>',
         '<a class="rig-cell" href={{html_file}}>',
@@ -42,12 +39,13 @@ function generate_portfolio(data){
       '</li>'
       ].join("\n");
 
-      // template: '<div ...>\n<h1 ...>{{title}}<h1>\n</div>'
+      console.log(data[i].html_file.slice(0,4));
+      if (data[i].html_file.slice(0,4) != "html") {
+        data[i].html_file = "html/portfolio_item.html?content=" + data[i].html_file+ "&index=" + i;
+      }
 
       var html = Mustache.render(template, data[i]);
       
-    
-      console.log(html);
       $("#rig").append(html);
     }
 
