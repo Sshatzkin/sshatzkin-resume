@@ -1,0 +1,16 @@
+<section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="go">
+  <div class="w-100">
+    <h2 class="mb-5">Go</h2>
+    <img class="profile-img" src="..\img\Go\optimized gif.gif"></img>
+    <p>Go is an ancient Chinese two-player game. I recreated the game go with the programming language Typed Racket for a course I was enrolled in.
+    </p>
+    <p>The game is fully playable by two players. Notice the UI details - a holographic circle under the cursor indicating a potential placement, a star indicating the last placed piece, a square indicating where a piece was captured last turn,
+      and a series
+      of timers showing how much time each player has spent planning their moves.
+    </p>
+    <p>The most challenging component of building this game was constructing the mechanic that removes pieces from the board. In go, a string of adjacent pieces is captured when the string is entirely surrounded by the opponent’s pieces or edges
+      of the board. Checking
+      for this case is actually a graph theory problem that required a graph traversal algorithm to resolve.
+    </p>
+  </div>
+</section>

@@ -4,15 +4,14 @@
 
 // Pull in Experiences Data
 fetch("../content/experiences.json")
+//fetch(window.location.origin + window.location.pathname + "../content/experiences.json")
 .then(response => {
    return response.json();
 })
 .then(data => generate_experiences(data.experiences));
 
 function generate_experiences(data){
-  console.log(data);
-  console.log(data.length);
-
+  // Example html of a resume entry
   /*<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">
@@ -35,7 +34,6 @@ function generate_experiences(data){
   // Loop through each experience
   for (var i = 0; i < data.length; i++) {
     if (data[i].display == true) {
-      console.log(data[i]);
       var template = [
           '<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">',
           ' <div class="resume-content">',
@@ -62,8 +60,6 @@ function generate_experiences(data){
 
       var html = Mustache.render(template, data[i]);
       
-    
-      console.log(html);
       $("#experience-container").append(html);
     }
 

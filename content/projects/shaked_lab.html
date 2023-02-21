@@ -1,0 +1,61 @@
+<section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="shakedlab">
+  <div class="w-100">
+    <h2 class="mb-5">Shaked Lab Website</h2>
+    <p>I completely redesigned and built this website for The Shaked Lab at the Technion Institute in Haifa. Their previous website was outdated and lacked modern accessibility features and mobile device compatibility. I redesigned their site to
+      bring
+      it up to par with modern design features, increasing accessibility, visual appeal and functionality.
+    </p>
+    <!-- Container for the image gallery -->
+    <div class="container">
+
+      <!-- Full-width images with number text -->
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="..\img\Shaked\Home.PNG" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="..\img\Shaked\Lab Members.PNG" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="..\img\Shaked\Research.PNG" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="..\img\Shaked\Contact.PNG" style="width:100%">
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- Image text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <!-- Thumbnail images -->
+      <div class="row-gal">
+        <div class="column-gal-small">
+          <img class="demo cursor" src="..\img\Shaked\Home.PNG" style="width:100%" onclick="currentSlide(1)" alt="Home Page">
+        </div>
+        <div class="column-gal-small">
+          <img class="demo cursor" src="..\img\Shaked\Lab Members.PNG" style="width:100%" onclick="currentSlide(2)" alt="Lab Members Page">
+        </div>
+        <div class="column-gal-small">
+          <img class="demo cursor" src="..\img\Shaked\Research.PNG" style="width:100%" onclick="currentSlide(3)" alt="Research Page">
+        </div>
+        <div class="column-gal-small">
+          <img class="demo cursor" src="..\img\Shaked\Contact.PNG" style="width:100%" onclick="currentSlide(4)" alt="Contact Us Page">
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<script src="../js/gallery.js"></script>
