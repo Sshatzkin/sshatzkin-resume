@@ -9,19 +9,11 @@ fetch("./content/portfolio.json")
   })
   .then((data) => generate_portfolio(data.projects));
 
+/**
+ * Generates the portfolio items in the HTML
+ * @param {*} data
+ */
 function generate_portfolio(data) {
-  /*<li>
-      <a class="rig-cell" href="html/portfolio.html#EB">
-        <img class="rig-img" src="img\EarlyBird\4-3.png">
-        <span class="rig-overlay"></span>
-        <span class="rig-text">Early Bird
-          <br>
-          <i class="fas fa-chevron-circle-right"></i>
-        </span>
-      </a>
-    </li>
-  */
-
   // Loop through each project
   for (var i = 0; i < data.length; i++) {
     if (data[i].display == true) {
@@ -38,7 +30,6 @@ function generate_portfolio(data) {
         "</li>",
       ].join("\n");
 
-      console.log(data[i].html_file.slice(0, 4));
       if (data[i].html_file.slice(0, 4) != "html") {
         data[i].html_file =
           "html/portfolio_item.html?content=" +
