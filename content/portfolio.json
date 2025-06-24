@@ -2,75 +2,107 @@
   "projects": [
     {
       "display": true,
-      "title": "Nature Photography: Quarantine 2020",
+      "title": "Social Robots",
+      "image": "img\\2021_Projects\\Garbage_Bot\\Robot_Versions.png",
+      "html_file": "garbage_bot",
+      "year": 2021,
+      "month": 12
+    },
+    {
+      "display": true,
+      "title": "Nature Photography 2020",
       "image": "img\\Nature_Photography\\Baltimore_2020\\Owl_4-3.jpg",
-      "html_file": "quarantine_2020"
+      "html_file": "quarantine_2020",
+      "year": 2020,
+      "month": 8
     },
     {
       "display": true,
       "title": "Hackathon 2020",
       "image": "img/Hackathon/2020/4-3.png",
-      "html_file": "hackathon_2020"
+      "html_file": "hackathon_2020",
+      "year": 2020,
+      "month": 2
     },
     {
       "display": true,
       "title": "Early Bird",
       "image": "img\\EarlyBird\\4-3.png",
-      "html_file": "earlybird"
+      "html_file": "earlybird",
+      "year": 2019,
+      "month": 12
     },
     {
       "display": true,
       "title": "Nature Photography: California",
       "image": "img/Nature_Photography/Cali_2019/Squirrel_4-3.jpg",
-      "html_file": "california_2019"
+      "html_file": "california_2019",
+      "year": 2019,
+      "month": 8
     },
     {
       "display": true,
-      "title": "UChicago Engineering Society",
+      "title": "Engineering Society",
       "image": "img/Engineering_Society/Engineering_Department_Logo_4-3-02.png",
-      "html_file": "engineering_society"
+      "html_file": "engineering_society",
+      "year": 2019,
+      "month": 6
     },
     {
       "display": true,
       "title": "Chiventure",
       "image": "img/Chiventure/Banner.png",
-      "html_file": "chiventure"
+      "html_file": "chiventure",
+      "year": 2019,
+      "month": 6
     },
     {
       "display": true,
       "title": "Hackathon 2019",
       "image": "img/Hackathon/Board.jpg",
-      "html_file": "uncommon_hacks_2019"
+      "html_file": "uncommon_hacks_2019",
+      "year": 2019,
+      "month": 2
     },
     {
       "display": true,
       "title": "Bagel",
       "image": "img/Bagel/Bagel_4-3.png",
-      "html_file": "bagel_unity"
+      "html_file": "bagel_unity",
+      "year": 2019,
+      "month": 6
     },
     {
       "display": true,
       "title": "Go",
       "image": "img\\Go\\go_4-3.png",
-      "html_file": "go"
+      "html_file": "go",
+      "year": 2019,
+      "month": 6
     },
     {
       "display": true,
       "title": "The CCD",
       "image": "img/CCD/CCD_4-3.png",
-      "html_file": "crypto_com_database"
+      "html_file": "crypto_com_database",
+      "year": 2018,
+      "month": 3
     },
     {
       "display": true,
       "title": "Shaked Lab Website",
       "image": "img/Shaked/Home_4-3.jpg",
-      "html_file": "shaked_lab"
+      "html_file": "shaked_lab",
+      "year": 2018,
+      "month": 7
     },
     {
       "display": true,
       "title": "Abstract Photography",
       "image": "img\\Abstract_Photography\\Drain_Photo_4-3.jpg",
-      "html_file": "abstract_photography"
+      "html_file": "abstract_photography",
+      "year": 2015,
+      "month": 4
     }
   ]
 }

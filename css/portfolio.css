@@ -39,6 +39,15 @@
     display:block;
 }
 
+.banner-video {
+    max-width:1000px;
+    margin:0 auto;
+    padding:0;
+    margin-bottom: 15px;
+    list-style: none;
+    display:block;
+}
+
 .profile-img {
   float: left;
   margin-right: 15px;
