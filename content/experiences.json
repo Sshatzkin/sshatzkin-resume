@@ -1,13 +1,22 @@
 {
   "experiences": [
     {
-
+      "company": "Axle",
+      "image": "axle.svg",
+      "title": "Product Engineer",
+      "location": "New York, NY",
+      "startDate": "2023",
+      "endDate": "Present",
+      "skills": "AWS, AI Agents, Typescript, React, Node.js",
+      "display": true
+    },
+    {
       "company": "Amazon",
       "image": "amazon.jpg",
       "title": "Software Development Engineer",
       "location": "New York, NY",
-      "startDate": "September 2022",
-      "endDate": "January 2023",
+      "startDate": "2022",
+      "endDate": "2023",
       "skills": "Java, AWS",
       "details": [
         "Built internal cloud monitoring and alarm systems for a Amazon Today, ensuring the security of data flow from major corporate partners",
@@ -20,8 +29,8 @@
       "image": "hci_lab.jpg",
       "title": "Undergrad Research Assistant",
       "location": "Chicago, IL",
-      "startDate": "November 2021",
-      "endDate": "June 2022",
+      "startDate": "2021",
+      "endDate": "2022",
       "skills": "Unity, HTC Vive, C#, Arduino",
       "details": [
         "Developed virtual reality game applications to interface with novel haptic devices, and designed the games around the device’s unique haptic sensations and capabilities",
@@ -34,8 +43,8 @@
       "image": "arch.jfif",
       "title": "Software Engineering Intern",
       "location": "New York, NY & Remote",
-      "startDate": "June 2021",
-      "endDate": "August 2021",
+      "startDate": "2021",
+      "endDate": "2021",
       "skills": "Azure, Kubernetes, Docker, Python",
       "details": [
         "Enhanced the safety of customer and corporate data by designing and coordinating a transition between security infrastructure and policies in live, customer-facing cloud software",
@@ -48,8 +57,8 @@
       "title": "Hack Arts Lab (HAL) & Weston Game Lab (WGL) Technician",
       "image": "UChicago Seal.png",
       "location": "Chicago, IL",
-      "startDate": "October 2019",
-      "endDate": "October 2021",
+      "startDate": "2019",
+      "endDate": "2021",
       "details": [
         "Trained and assisted visiting students and faculty with proper usage of fabriccation machinery - laser cutters, CNC machines, vinyl cutters, 3D printers, soldering irons",
         "Managed day to day operations by administering lab resources, managing visitor appointments and chekouts, and maintaining and repairing equipment",
@@ -62,8 +71,8 @@
       "image": "UChicago Seal.png",
       "title": "Lead Developer",
       "location": "Chicago, IL",
-      "startDate": "June 2019",
-      "endDate": "June 2021",
+      "startDate": "2019",
+      "endDate": "2021",
       "skills": "React, AWS, GitHub",
       "details": [
         "Develop web-based software tool and database for conducting cladistic analysis and storing character data",
@@ -76,12 +85,9 @@
       "title": "Research Intern",
       "image": "regulus_cyber.avif",
       "location": "Haifa, IL",
-      "startDate": "June 2018",
-      "endDate": "August 2018",
-      "details":[
-        "Conducted research on the GPS and automated vehicle industries for GPS sensor security startup",
-        "Prepared and presented findings to the CEO and company-wide"
-      ],
+      "startDate": "2018",
+      "endDate": null,
+      "details": [],
       "display": true
     },
     {
@@ -89,15 +95,10 @@
       "title": "Project Management Intern",
       "image": "fokoya.png",
       "location": "Tel Aviv, IL",
-      "startDate": "February 2018",
-      "endDate": "June 2018",
-      "details":[
-        "Developed and marketed the Cryptocurrency Community Database, a forum-like system created in Google Sheets",
-        "Produced and hosted a livestream for product marketing and community engagement on 4 social media platforms",
-        "Automated manual office processes by developing a Google Chrome extension to perform application testing functions, cutting down a task that formerly took hours to only a few seconds"
-      ],
+      "startDate": "2018",
+      "endDate": null,
+      "details": [],
       "display": true
     }
-
   ]
 }
