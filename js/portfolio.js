@@ -19,8 +19,8 @@ function generate_portfolio(data) {
     if (data[i].display == true) {
       var template = [
         "<li>",
-        '<a class="rig-cell" href={{html_file}}>',
-        '<img class="rig-img" src={{image}}>',
+        '<a class="rig-cell neon-item" href={{html_file}}>',
+        '<img class="rig-img illustration" src={{image}}>',
         '<span class="rig-overlay"></span>',
         '<span class="rig-text">{{title}}',
         "<br>",

@@ -1,13 +1,31 @@
 /*!
- * Start Bootstrap - Resume v5.0.7 (https://startbootstrap.com/template-overviews/resume)
- * Copyright 2013-2023 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
+ * Neon-Green Natural History Sci-Fi Theme
+ * Based on Start Bootstrap - Resume v5.0.7
  */
 
+/* Global Color Tokens */
+:root {
+  --bg-dark: #000; /* dark background */
+  --line-neon: #0f0; /* neon green line art */
+  --text-muted: rgba(15, 255, 15, 0.6); /* muted neon green text */
+  --text-primary: #0f0; /* primary neon green */
+  --text-secondary: rgba(15, 255, 15, 0.4); /* secondary muted green */
+  --glow-shadow: 0 0 4px var(--line-neon);
+  --glow-strong: 0 0 8px var(--line-neon);
+}
+
+/* Background & Canvas */
 body {
-  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: "Space Mono", "Courier New", monospace;
   padding-top: 54px;
-  color: #868e96;
+  color: var(--text-muted);
+  background: var(--bg-dark);
+  background-image: radial-gradient(
+    rgba(15, 255, 15, 0.02) 1px,
+    transparent 1px
+  );
+  background-size: 20px 20px;
+  min-height: 100vh;
 }
 
 @media (min-width: 992px) {
@@ -17,54 +35,108 @@ body {
   }
 }
 
+/* Typography - Neon Green Sci-Fi Style with Fredericka the Great */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  font-weight: 700;
+  font-family: "Fredericka the Great", serif;
+  font-weight: 400;
+  font-style: normal;
   text-transform: uppercase;
-  color: #343a40;
+  color: var(--line-neon);
+  text-shadow: var(--glow-shadow);
+  letter-spacing: 0.1em;
 }
 
 h1 {
   font-size: 6rem;
   line-height: 5.5rem;
+  text-shadow: var(--glow-strong);
 }
 
 h2 {
   font-size: 3.5rem;
+  text-shadow: var(--glow-shadow);
 }
 
 h3 {
   font-size: 2rem;
+  text-shadow: var(--glow-shadow);
+}
+
+/* Ensure name spans also use Fredericka font */
+h1 .text-primary,
+.text-primary {
+  font-family: "Fredericka the Great", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Neon Flicker Animation */
+@keyframes neonFlicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px var(--line-neon), 0 0 11px var(--line-neon),
+      0 0 19px var(--line-neon), 0 0 40px var(--line-neon);
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: 0 0 2px var(--line-neon), 0 0 8px var(--line-neon);
+  }
+}
+
+/* Floating Animation for Sci-Fi Elements */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 p.lead {
   font-size: 1.15rem;
   font-weight: 400;
+  color: var(--text-muted);
+  font-family: "Space Mono", monospace;
 }
 
+/* Updated Subheading with Neon Style */
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: "Space Mono", monospace;
   font-size: 1.5rem;
+  color: var(--text-secondary);
+  text-shadow: 0 0 2px var(--line-neon);
 }
 
+/* Navigation & Buttons - Neon Outline Style */
 .social-icons a {
   display: inline-block;
   height: 3.5rem;
   width: 3.5rem;
-  background-color: #495057;
-  color: #fff !important;
+  background-color: transparent;
+  color: var(--line-neon) !important;
+  border: 1px solid var(--line-neon);
   border-radius: 100%;
   text-align: center;
   font-size: 1.5rem;
   line-height: 3.5rem;
   margin-right: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: var(--glow-shadow);
 }
 
 .social-icons a:last-child {
@@ -72,25 +144,54 @@ p.lead {
 }
 
 .social-icons a:hover {
-  background-color: #007bff;
+  background-color: var(--line-neon);
+  color: var(--bg-dark) !important;
+  box-shadow: var(--glow-strong);
+  transform: scale(1.05);
 }
 
+/* Development Icons with Neon Glow */
 .dev-icons {
   font-size: 3rem;
+  color: var(--text-secondary);
+}
+
+.dev-icons .list-inline-item i {
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 0 2px var(--line-neon));
 }
 
 .dev-icons .list-inline-item i:hover {
-  color: #007bff;
+  color: var(--line-neon);
+  filter: drop-shadow(0 0 6px var(--line-neon));
+  transform: scale(1.05);
+  animation: float 3s ease-in-out infinite;
 }
 
+/* Sidebar Navigation - Neon Style */
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
+  color: var(--text-muted);
+  border: 1px solid transparent;
+  margin: 0.2rem 0;
+  padding: 0.8rem 1rem;
+  transition: all 0.3s ease;
+  font-family: "Space Mono", monospace;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link:hover {
+  color: var(--line-neon);
+  border: 1px solid var(--line-neon);
+  background: transparent;
+  box-shadow: var(--glow-shadow);
+  text-shadow: 0 0 2px var(--line-neon);
 }
 
 #sideNav .navbar-toggler:focus {
-  outline-color: #4da3ff;
+  outline-color: var(--line-neon);
+  box-shadow: 0 0 0 0.2rem rgba(15, 255, 15, 0.25);
 }
 
 @media (min-width: 992px) {
@@ -108,6 +209,9 @@ p.lead {
     flex-direction: column;
     width: 17rem;
     height: 100vh;
+    background: var(--bg-dark);
+    border-right: 1px solid var(--line-neon);
+    box-shadow: 2px 0 10px rgba(15, 255, 15, 0.1);
   }
   #sideNav .navbar-brand {
     display: -webkit-box;
@@ -119,7 +223,13 @@ p.lead {
   #sideNav .navbar-brand .img-profile {
     max-width: 10rem;
     max-height: 10rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    border: 0.2rem solid var(--line-neon);
+    box-shadow: var(--glow-shadow);
+    transition: all 0.3s ease;
+  }
+  #sideNav .navbar-brand .img-profile:hover {
+    box-shadow: var(--glow-strong);
+    transform: scale(1.02);
   }
   #sideNav .navbar-collapse {
     display: -webkit-box;
@@ -149,14 +259,34 @@ p.lead {
   }
 }
 
+/* Resume Sections with Neon Styling */
 section.resume-section {
   padding-top: 5rem !important;
   padding-bottom: 5rem !important;
   max-width: 75rem;
+  border-bottom: 1px solid rgba(15, 255, 15, 0.1);
+}
+
+section.resume-section .resume-item {
+  padding: 2rem 0;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+section.resume-section .resume-item:hover {
+  border: 1px solid rgba(15, 255, 15, 0.3);
+  background: rgba(15, 255, 15, 0.02);
+  box-shadow: 0 4px 20px rgba(15, 255, 15, 0.1);
 }
 
 section.resume-section .resume-item .resume-date {
   min-width: none;
+  color: var(--text-secondary);
+  font-family: "Space Mono", monospace;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 @media (min-width: 768px) {
@@ -175,18 +305,192 @@ section.resume-section .resume-item .resume-date {
   }
 }
 
+/* Neon Primary Styling */
 .bg-primary {
-  background-color: #007bff !important;
+  background-color: var(--bg-dark) !important;
+  border: 1px solid var(--line-neon);
 }
 
 .text-primary {
-  color: #007bff !important;
+  color: var(--line-neon) !important;
 }
 
+/* Links with Neon Styling */
 a {
-  color: #007bff;
+  color: var(--line-neon);
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
-a:hover, a:focus, a:active {
-  color: #0056b3;
+a:hover,
+a:focus,
+a:active {
+  color: var(--line-neon);
+  text-shadow: var(--glow-shadow);
+  text-decoration: none;
+}
+
+/* Additional Neon Elements */
+.btn {
+  border: 1px solid var(--line-neon);
+  background: transparent;
+  color: var(--line-neon);
+  transition: all 0.3s ease;
+  font-family: "Space Mono", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.btn:hover {
+  background: var(--line-neon);
+  color: var(--bg-dark);
+  box-shadow: var(--glow-strong);
+  transform: translateY(-2px);
+}
+
+/* Illustration styling for when images are updated */
+.illustration {
+  filter: drop-shadow(0 0 2px var(--line-neon));
+  mix-blend-mode: screen;
+  transition: all 0.3s ease;
+}
+
+.illustration:hover {
+  filter: drop-shadow(0 0 6px var(--line-neon));
+  transform: scale(1.05);
+}
+
+/* General text styling */
+p,
+li,
+span {
+  color: var(--text-muted);
+  font-family: "Space Mono", monospace;
+}
+
+/* List styling with neon accents */
+ul,
+ol {
+  color: var(--text-muted);
+}
+
+li::marker {
+  color: var(--text-secondary);
+}
+
+/* Skills and progress bars */
+.progress {
+  background-color: rgba(15, 255, 15, 0.1);
+  border: 1px solid rgba(15, 255, 15, 0.2);
+}
+
+.progress-bar {
+  background-color: var(--line-neon);
+  box-shadow: var(--glow-shadow);
+}
+
+/* Additional Neon Effects and Animations */
+.neon-item {
+  position: relative;
+}
+
+.neon-item::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(15, 255, 15, 0.1),
+    transparent,
+    rgba(15, 255, 15, 0.1),
+    transparent
+  );
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.neon-item:hover::before {
+  opacity: 1;
+  animation: neonScan 2s linear infinite;
+}
+
+@keyframes neonScan {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+/* Pulse effect for important elements */
+.pulse-neon {
+  animation: neonPulse 3s ease-in-out infinite;
+}
+
+@keyframes neonPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 4px var(--line-neon);
+  }
+  50% {
+    box-shadow: 0 0 8px var(--line-neon), 0 0 16px var(--line-neon);
+  }
+}
+
+/* Sci-fi grid background pattern */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      rgba(15, 255, 15, 0.03) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(15, 255, 15, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Enhanced scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+  border: 1px solid rgba(15, 255, 15, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, var(--line-neon), transparent);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--line-neon);
+  box-shadow: 0 0 4px var(--line-neon);
+}
+
+/* Selection styling */
+::selection {
+  background: rgba(15, 255, 15, 0.2);
+  color: var(--line-neon);
+  text-shadow: 0 0 2px var(--line-neon);
+}
+
+/* Focus states */
+*:focus {
+  outline: 1px solid var(--line-neon);
+  outline-offset: 2px;
+  box-shadow: 0 0 4px rgba(15, 255, 15, 0.3);
 }
