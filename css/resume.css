@@ -10,8 +10,6 @@
   --text-muted: rgba(15, 255, 15, 0.6); /* muted neon green text */
   --text-primary: #0f0; /* primary neon green */
   --text-secondary: rgba(15, 255, 15, 0.4); /* secondary muted green */
-  --glow-shadow: 0 0 4px var(--line-neon);
-  --glow-strong: 0 0 8px var(--line-neon);
 }
 
 /* Background & Canvas */
@@ -35,7 +33,7 @@ body {
   }
 }
 
-/* Typography - Neon Green Sci-Fi Style with Fredericka the Great */
+/* Typography - Clean Illustration Style with Fredericka the Great */
 h1,
 h2,
 h3,
@@ -47,24 +45,20 @@ h6 {
   font-style: normal;
   text-transform: uppercase;
   color: var(--line-neon);
-  text-shadow: var(--glow-shadow);
   letter-spacing: 0.1em;
 }
 
 h1 {
   font-size: 6rem;
   line-height: 5.5rem;
-  text-shadow: var(--glow-strong);
 }
 
 h2 {
   font-size: 3.5rem;
-  text-shadow: var(--glow-shadow);
 }
 
 h3 {
   font-size: 2rem;
-  text-shadow: var(--glow-shadow);
 }
 
 /* Ensure name spans also use Fredericka font */
@@ -73,25 +67,6 @@ h1 .text-primary,
   font-family: "Fredericka the Great", serif;
   font-weight: 400;
   font-style: normal;
-}
-
-/* Neon Flicker Animation */
-@keyframes neonFlicker {
-  0%,
-  18%,
-  22%,
-  25%,
-  53%,
-  57%,
-  100% {
-    text-shadow: 0 0 4px var(--line-neon), 0 0 11px var(--line-neon),
-      0 0 19px var(--line-neon), 0 0 40px var(--line-neon);
-  }
-  20%,
-  24%,
-  55% {
-    text-shadow: 0 0 2px var(--line-neon), 0 0 8px var(--line-neon);
-  }
 }
 
 /* Floating Animation for Sci-Fi Elements */
@@ -112,17 +87,16 @@ p.lead {
   font-family: "Space Mono", monospace;
 }
 
-/* Updated Subheading with Neon Style */
+/* Updated Subheading with Clean Style */
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
   font-family: "Space Mono", monospace;
   font-size: 1.5rem;
   color: var(--text-secondary);
-  text-shadow: 0 0 2px var(--line-neon);
 }
 
-/* Navigation & Buttons - Neon Outline Style */
+/* Navigation & Buttons - Clean Outline Style */
 .social-icons a {
   display: inline-block;
   height: 3.5rem;
@@ -136,7 +110,6 @@ p.lead {
   line-height: 3.5rem;
   margin-right: 1rem;
   transition: all 0.3s ease;
-  box-shadow: var(--glow-shadow);
 }
 
 .social-icons a:last-child {
@@ -146,11 +119,10 @@ p.lead {
 .social-icons a:hover {
   background-color: var(--line-neon);
   color: var(--bg-dark) !important;
-  box-shadow: var(--glow-strong);
   transform: scale(1.05);
 }
 
-/* Development Icons with Neon Glow */
+/* Development Icons with Clean Style */
 .dev-icons {
   font-size: 3rem;
   color: var(--text-secondary);
@@ -158,17 +130,15 @@ p.lead {
 
 .dev-icons .list-inline-item i {
   transition: all 0.3s ease;
-  filter: drop-shadow(0 0 2px var(--line-neon));
 }
 
 .dev-icons .list-inline-item i:hover {
   color: var(--line-neon);
-  filter: drop-shadow(0 0 6px var(--line-neon));
   transform: scale(1.05);
   animation: float 3s ease-in-out infinite;
 }
 
-/* Sidebar Navigation - Neon Style */
+/* Sidebar Navigation - Clean Style */
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
   letter-spacing: 0.05rem;
@@ -185,13 +155,10 @@ p.lead {
   color: var(--line-neon);
   border: 1px solid var(--line-neon);
   background: transparent;
-  box-shadow: var(--glow-shadow);
-  text-shadow: 0 0 2px var(--line-neon);
 }
 
 #sideNav .navbar-toggler:focus {
   outline-color: var(--line-neon);
-  box-shadow: 0 0 0 0.2rem rgba(15, 255, 15, 0.25);
 }
 
 @media (min-width: 992px) {
@@ -211,7 +178,6 @@ p.lead {
     height: 100vh;
     background: var(--bg-dark);
     border-right: 1px solid var(--line-neon);
-    box-shadow: 2px 0 10px rgba(15, 255, 15, 0.1);
   }
   #sideNav .navbar-brand {
     display: -webkit-box;
@@ -224,11 +190,9 @@ p.lead {
     max-width: 10rem;
     max-height: 10rem;
     border: 0.2rem solid var(--line-neon);
-    box-shadow: var(--glow-shadow);
     transition: all 0.3s ease;
   }
   #sideNav .navbar-brand .img-profile:hover {
-    box-shadow: var(--glow-strong);
     transform: scale(1.02);
   }
   #sideNav .navbar-collapse {
@@ -277,7 +241,6 @@ section.resume-section .resume-item {
 section.resume-section .resume-item:hover {
   border: 1px solid rgba(15, 255, 15, 0.3);
   background: rgba(15, 255, 15, 0.02);
-  box-shadow: 0 4px 20px rgba(15, 255, 15, 0.1);
 }
 
 section.resume-section .resume-item .resume-date {
@@ -315,7 +278,7 @@ section.resume-section .resume-item .resume-date {
   color: var(--line-neon) !important;
 }
 
-/* Links with Neon Styling */
+/* Links with Clean Styling */
 a {
   color: var(--line-neon);
   text-decoration: none;
@@ -326,11 +289,10 @@ a:hover,
 a:focus,
 a:active {
   color: var(--line-neon);
-  text-shadow: var(--glow-shadow);
   text-decoration: none;
 }
 
-/* Additional Neon Elements */
+/* Additional Clean Elements */
 .btn {
   border: 1px solid var(--line-neon);
   background: transparent;
@@ -344,19 +306,15 @@ a:active {
 .btn:hover {
   background: var(--line-neon);
   color: var(--bg-dark);
-  box-shadow: var(--glow-strong);
   transform: translateY(-2px);
 }
 
-/* Illustration styling for when images are updated */
+/* Illustration styling */
 .illustration {
-  filter: drop-shadow(0 0 2px var(--line-neon));
-  mix-blend-mode: screen;
   transition: all 0.3s ease;
 }
 
 .illustration:hover {
-  filter: drop-shadow(0 0 6px var(--line-neon));
   transform: scale(1.05);
 }
 
@@ -386,64 +344,9 @@ li::marker {
 
 .progress-bar {
   background-color: var(--line-neon);
-  box-shadow: var(--glow-shadow);
 }
 
-/* Additional Neon Effects and Animations */
-.neon-item {
-  position: relative;
-}
-
-.neon-item::before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: linear-gradient(
-    45deg,
-    transparent,
-    rgba(15, 255, 15, 0.1),
-    transparent,
-    rgba(15, 255, 15, 0.1),
-    transparent
-  );
-  z-index: -1;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.neon-item:hover::before {
-  opacity: 1;
-  animation: neonScan 2s linear infinite;
-}
-
-@keyframes neonScan {
-  0% {
-    background-position: -100% 0;
-  }
-  100% {
-    background-position: 100% 0;
-  }
-}
-
-/* Pulse effect for important elements */
-.pulse-neon {
-  animation: neonPulse 3s ease-in-out infinite;
-}
-
-@keyframes neonPulse {
-  0%,
-  100% {
-    box-shadow: 0 0 4px var(--line-neon);
-  }
-  50% {
-    box-shadow: 0 0 8px var(--line-neon), 0 0 16px var(--line-neon);
-  }
-}
-
-/* Sci-fi grid background pattern */
+/* Clean grid background pattern */
 body::before {
   content: "";
   position: fixed;
@@ -461,7 +364,7 @@ body::before {
   z-index: -1;
 }
 
-/* Enhanced scrollbar styling */
+/* Clean scrollbar styling */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -472,25 +375,22 @@ body::before {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(transparent, var(--line-neon), transparent);
+  background: var(--line-neon);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--line-neon);
-  box-shadow: 0 0 4px var(--line-neon);
 }
 
 /* Selection styling */
 ::selection {
   background: rgba(15, 255, 15, 0.2);
   color: var(--line-neon);
-  text-shadow: 0 0 2px var(--line-neon);
 }
 
 /* Focus states */
 *:focus {
   outline: 1px solid var(--line-neon);
   outline-offset: 2px;
-  box-shadow: 0 0 4px rgba(15, 255, 15, 0.3);
 }
